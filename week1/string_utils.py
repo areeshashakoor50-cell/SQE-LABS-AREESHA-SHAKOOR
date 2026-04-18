@@ -40,3 +40,14 @@ def remove_duplicates(text: str) -> str:
         if c != result[-1]:
             result += c
     return result
+def test_reverse_empty():
+    assert reverse_string("") == ""
+
+def test_word_count_empty():
+    assert word_count("") == 0
+
+def test_capitalise_mixed_case():
+    assert capitalise_words("hELLo woRLD") == "Hello World"
+
+def test_remove_duplicates_long():
+    assert remove_duplicates("aaaaaa") == "a"
